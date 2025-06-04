@@ -1,0 +1,13 @@
+.header {
+  margin: 55px auto 105px;
+  height: 132px;
+  width: 100%;
+  max-width: 1440px;
+  background: var(--bg-header);
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+.title {
+  text-transform: lowercase;
+}
