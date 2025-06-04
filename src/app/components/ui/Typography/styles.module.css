@@ -1,0 +1,26 @@
+.black {
+  color: var(--text-primary);
+}
+
+.white {
+  color: var(--text-secondary);
+}
+
+.large,
+.medium,
+.main {
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.large {
+  font-size: 96px;
+}
+
+.medium {
+  font-size: 36px;
+}
+
+.main {
+  font-size: 24px;
+}
