@@ -1,7 +1,7 @@
 Как запустить
 
 1. Клонирование проект:
-   git clone https://github.com/ваш-репозиторий.git
+   git clone 
 
 2. Установка зависимостей:
    npm install
