@@ -6,11 +6,15 @@
   color: var(--text-secondary);
 }
 
+.red {
+  color: var(--text-error);
+}
+
 .large,
 .medium,
 .main {
+  line-height: normal;
   font-weight: 400;
-  line-height: 100%;
 }
 
 .large {
@@ -23,4 +27,16 @@
 
 .main {
   font-size: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+  .large {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .large {
+    font-size: 40px;
+  }
 }

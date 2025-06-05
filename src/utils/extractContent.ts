@@ -8,7 +8,6 @@ export default function extractContent(htmlString: string) {
 
   const h1Match = htmlString.match(/<h1>(.*?)<\/h1>/);
   const pMatch = htmlString.match(/<p>(.*?)<\/p>/);
-
   result.h1 = h1Match ? h1Match[1] : "";
   result.p = pMatch ? pMatch[1] : "";
 

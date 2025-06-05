@@ -14,6 +14,7 @@ export default function Typography({
       className={clsx(styles.text, className, {
         [styles.black]: color === "black",
         [styles.white]: color === "white",
+        [styles.red]: color === "red",
         [styles.large]: variants === "large",
         [styles.medium]: variants === "medium",
         [styles.main]: variants === "main",

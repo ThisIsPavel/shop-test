@@ -1,0 +1,16 @@
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7px;
+}
+
+.button {
+  width: 68px;
+  height: 68px;
+}
+
+.input {
+  text-align: center;
+  width: 50%;
+}

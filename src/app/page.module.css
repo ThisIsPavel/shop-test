@@ -10,11 +10,38 @@
 
 .reviewList {
   max-width: 970px;
-  flex-wrap: wrap;
+  grid-template-columns: repeat(2, calc(50% - (var(--gap-card) / 2)));
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
   gap: var(--gap-card);
   margin-bottom: 243px;
+}
+
+.checkoutSummary {
+  max-width: 708px;
+  width: 100%;
+  margin-bottom: 47px;
+}
+
+.cards {
+  height: 100%;
+  max-width: calc(955px + calc(var(--gap-card) / 2));
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: var(--gap-card);
+}
+
+@media screen and (max-width: 1024px) {
+  .cards {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .reviewList {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

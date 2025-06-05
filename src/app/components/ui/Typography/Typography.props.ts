@@ -6,7 +6,7 @@ export default interface TypographyProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> {
   as?: TextTags;
   children: React.ReactNode;
-  color: "black" | "white";
+  color: "black" | "white" | "red";
   className?: string;
   variants: "large" | "medium" | "main";
 }
