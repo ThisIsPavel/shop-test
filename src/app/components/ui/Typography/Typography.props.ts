@@ -9,4 +9,5 @@ export default interface TypographyProps
   color: "black" | "white" | "red";
   className?: string;
   variants: "large" | "medium" | "main";
+  isPrice?:boolean
 }

@@ -78,8 +78,8 @@ export default observer(function CheckoutSummary() {
                 </Typography>
               </td>
               <td className={styles.price}>
-                <Typography color="black" variants="main">
-                  {product.price * product.quantity} Р
+                <Typography color="black" variants="main" isPrice>
+                  {product.price * product.quantity}
                 </Typography>
               </td>
             </tr>

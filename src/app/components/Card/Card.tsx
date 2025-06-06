@@ -36,8 +36,13 @@ export default observer(function Card({ product }: CardProps) {
         </Typography>
       </div>
       <div className={styles.cardFooter}>
-        <Typography color="black" variants="medium" className={styles.price}>
-          цена: {price}P
+        <Typography
+          color="black"
+          variants="medium"
+          className={styles.price}
+          isPrice
+        >
+          цена: {price}
         </Typography>
         {cartStore.hasProductinCart(id) ? (
           <Counter product={product} />

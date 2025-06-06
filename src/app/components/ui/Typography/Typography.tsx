@@ -8,6 +8,7 @@ export default function Typography({
   children,
   className,
   color,
+  isPrice = false,
 }: TypographyProps) {
   return (
     <Tag
@@ -20,7 +21,7 @@ export default function Typography({
         [styles.main]: variants === "main",
       })}
     >
-      {children}
+      {children} {isPrice && "₽"}
     </Tag>
   );
 }

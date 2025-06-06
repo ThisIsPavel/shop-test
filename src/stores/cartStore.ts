@@ -69,6 +69,15 @@ class CartStore {
     });
     this.saveToLocalStorage();
   }
+
+  setQuantity(id: number, quantity: number) {
+    if (quantity < 1) quantity = 1;
+    const existingItem = this.getProductById(id);
+    if (existingItem) {
+      existingItem.quantity = quantity;
+      this.saveToLocalStorage();
+    }
+  }
   resetCart() {
     if (this.cartItems.length > 0) {
       this.cartItems = [];
